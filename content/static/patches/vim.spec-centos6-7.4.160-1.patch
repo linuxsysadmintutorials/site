@@ -1,0 +1,26 @@
+@@ -550,7 +550,7 @@
+   --enable-perlinterp \
+   --disable-tclinterp --with-x=yes \
+   --enable-xim --enable-multibyte \
+-  --with-tlib=ncurses \
++  --with-tlib=tinfo \
+   --enable-gtk2-check --enable-gui=gtk2 \
+   --with-compiledby="<bugzilla@redhat.com>" --enable-cscope \
+   --with-modified-by="<bugzilla@redhat.com>" \
+@@ -581,7 +581,7 @@
+  --with-x=no \
+  --enable-gui=no --exec-prefix=%{_prefix} --enable-multibyte \
+  --enable-cscope --with-modified-by="<bugzilla@redhat.com>" \
+- --with-tlib=ncurses \
++ --with-tlib=tinfo \
+  --with-compiledby="<bugzilla@redhat.com>" \
+ %if "%{withnetbeans}" == "1"
+   --enable-netbeans \
+@@ -614,7 +614,7 @@
+   --disable-selinux \
+ %endif
+   --disable-pythoninterp --disable-perlinterp --disable-tclinterp \
+-  --with-tlib=ncurses --enable-gui=no --disable-gpm --exec-prefix=/ \
++  --with-tlib=tinfo --enable-gui=no --disable-gpm --exec-prefix=/ \
+   --with-compiledby="<bugzilla@redhat.com>" \
+   --with-modified-by="<bugzilla@redhat.com>"
